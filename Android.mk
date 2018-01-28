@@ -109,6 +109,16 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := ifaa_fingerprint
+LOCAL_MODULE_OWNER := nubia
+LOCAL_SRC_FILES := proprietary/framework/ifaa_fingerprint.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := tcmclient
 LOCAL_MODULE_OWNER := nubia
 LOCAL_SRC_FILES := proprietary/framework/tcmclient.jar
